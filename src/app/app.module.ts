@@ -9,6 +9,10 @@ import { DashboardComponent } from './sidebarOptions/dashboard/dashboard.compone
 import { ChartsComponent } from './sidebarOptions/charts/charts.component';
 import { AboutComponent } from './sidebarOptions/about/about.component';
 import { appRoutes } from 'src/routes';
+import { NgChartsModule } from 'ng2-charts';
+import { BarChartComponent } from './chartSections/bar-chart/bar-chart.component';
+import { LineChartComponent } from './chartSections/line-chart/line-chart.component';
+import { PieChartComponent } from './chartSections/pie-chart/pie-chart.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +21,16 @@ import { appRoutes } from 'src/routes';
     SidebarComponent,
     DashboardComponent,
     ChartsComponent,
-    AboutComponent
+    AboutComponent,
+    BarChartComponent,
+    LineChartComponent,
+    PieChartComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    AppRoutingModule
+    AppRoutingModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
