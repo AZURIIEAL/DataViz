@@ -7,12 +7,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DashboardComponent } from './sidebarOptions/dashboard/dashboard.component';
 import { ChartsComponent } from './sidebarOptions/charts/charts.component';
-import { AboutComponent } from './sidebarOptions/about/about.component';
 import { appRoutes } from 'src/routes';
 import { NgChartsModule } from 'ng2-charts';
-import { BarChartComponent } from './chartSections/bar-chart/bar-chart.component';
-import { LineChartComponent } from './chartSections/line-chart/line-chart.component';
-import { PieChartComponent } from './chartSections/pie-chart/pie-chart.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.component';
+
+
 
 @NgModule({
   declarations: [
@@ -21,16 +23,19 @@ import { PieChartComponent } from './chartSections/pie-chart/pie-chart.component
     SidebarComponent,
     DashboardComponent,
     ChartsComponent,
-    AboutComponent,
     BarChartComponent,
     LineChartComponent,
-    PieChartComponent
+    PieChartComponent,
+    DoughnutChartComponent
+
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     AppRoutingModule,
-    NgChartsModule
+    NgChartsModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

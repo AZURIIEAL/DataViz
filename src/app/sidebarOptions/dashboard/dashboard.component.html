@@ -1,14 +1,52 @@
-<div class="section-container">
-  <div class="cards">
-    <div class="card-deck">
-      <div class="card mb3 shadow card-theme">
-        <div class="card card-header card-heading-theme">
-          <h5>Orders</h5>
-        </div>
-        <div class="card-body">
-          <app-bar-chart></app-bar-chart>
+<section id="new" class="new-section">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- start here -->
+      <div class="col-xs-6 col-lg-6">
+        <div class="card mb-3 shadow card-theme">
+          <div class="card-header card-header-theme">
+            <h5>Daily Orders</h5>
+          </div>
+          <div class="card-body">
+            <app-bar-chart></app-bar-chart>
+          </div>
         </div>
       </div>
+
+      <div class="col-xs-6 col-lg-6">
+        <div class="card mb-3 shadow card-theme h-100 w-100">
+          <div class="card-header card-header-theme">
+            <h5>Daily Orders</h5>
+          </div>
+          <div class="card-body">
+            <app-doughnut-chart></app-doughnut-chart>
+          </div>
+        </div>
+      </div>
+      <!-- section split -->
+      <div class="col-xs-6 col-lg-6">
+        <div class="card mb-3 shadow card-theme">
+          <div class="card-header card-header-theme">
+            <h5>Daily Orders</h5>
+          </div>
+          <div class="card-body">
+            <app-pie-chart></app-pie-chart>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-6 col-lg-6">
+        <div class="card mb-3 shadow card-theme h-100 w-100">
+          <div class="card-header card-header-theme">
+            <h5>Daily Orders</h5>
+          </div>
+          <div class="card-body">
+            <app-line-chart></app-line-chart>
+          </div>
+        </div>
+      </div>
+      <!-- end here -->
+      
     </div>
   </div>
-</div>
+</section>
