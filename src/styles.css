@@ -1,26 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
-:root{
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
-.html{
+
+html {
     height: 100%;
 }
-.a{
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #1C2228;
+    color: #f7fff7;
+    height: 100%;
+}
+
+a {
     color: #44a4cd;
 }
-.a :hover{
+
+a:hover {
     color: #44a8cf;
 }
-.body{
-    font-family: 'Raleway', sans-serif;
-    background-color: #1c2228;
-    color: #f7fff7 ;
-    height: 100%;
 
+.shadow {
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2), 0 5px 6px rgba(0,0,0,0.3);
 }
-.shadow{
-    box-shadow: 0 8px 12px rgba(0,0, 0,0.2),0 5px 6px rgba(0,0, 0,0.3);
+
+.section-container {
+    padding: 30px;
 }
-.section-container{
+
+.card-theme {
+    background-color: #191F26;
+    border: none;
+    border-radius: 2px;
+}
+
+.card-heading-theme{
+    color: #eee;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 12px;
+}
+
+.card-body-theme{
+    background-color: #494F56;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-container {
     padding: 30px;
 }
