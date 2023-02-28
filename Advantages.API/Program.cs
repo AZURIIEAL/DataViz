@@ -1,5 +1,13 @@
+using Advantages.api.Models;
+using Advantages.api.services;
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 
+
+builder.Services.Configure<MongoDBSettings>(builder.Configuration.GetSection("MongoDB"));
+builder.Services.AddSingleton<MongoDBService>();
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -12,8 +20,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+  app.UseSwagger();
+  app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
